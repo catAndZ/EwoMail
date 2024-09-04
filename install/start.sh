@@ -15,7 +15,7 @@ en=$2
 #stty erase ^h
 setenforce 0
 
-centosV=`cat /etc/redhat-release|sed -r 's/.* ([0-9]+)\..*/\1/'`
+centosV=`cat /etc/redhat-release|sed -r 's/.* ([0-9]+)\.?.*/\1/'`
 
 if [ $centosV != 7 ] ; then 
     if [ $centosV != 8 ] ; then 
